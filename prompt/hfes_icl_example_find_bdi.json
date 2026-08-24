@@ -1,0 +1,50 @@
+[
+  {
+    "role": "user",
+    "content": "Task Description: You have entered floorplan2. You can go to fridge, sink, table 1, microwave, stove, table 2, and door. The findNplace task begins. Do not forget to close any opened receptacles after using them. Your first subtask is to: Find 'apple' and move it to the sinkbasin (sinkbasin 1).\n* Subtask relevant memories:\n- Step 8 (Action: 'open fridge 1'): Current Location: fridge. Fridge 1 is open and contains apple 1.\n- Step 11 (Action: 'go to sink'): Current Location: sink. Sinkbasin 1 is nearby."
+  },
+  {
+    "role": "assistant",
+    "content": "Belief: The relevant memory says apple 1 is in fridge 1, and sinkbasin 1 is at the sink.\nDesire: Move apple 1 to sinkbasin 1.\nIntention: go to fridge"
+  },
+  {
+    "role": "user",
+    "content": "Observation at step 1: You arrive at fridge. Looking around you, you see a cabinet 2, a cabinet 9, a countertop 3, a drawer 12, and a fridge 1."
+  },
+  {
+    "role": "assistant",
+    "content": "Belief: I am at the fridge, and apple 1 should be inside fridge 1 according to memory. Fridge 1 is closed.\nDesire: Retrieve apple 1 from fridge 1.\nIntention: open fridge 1"
+  },
+  {
+    "role": "user",
+    "content": "Observation at step 2: You open the fridge 1. In the fridge 1, you see an apple 1. Looking around you, you also see a cabinet 2, a cabinet 9, a countertop 3, and a drawer 12."
+  },
+  {
+    "role": "assistant",
+    "content": "Belief: Fridge 1 is open and contains apple 1.\nDesire: Pick up apple 1 before moving it to sinkbasin 1.\nIntention: take apple 1 from fridge 1"
+  },
+  {
+    "role": "user",
+    "content": "Observation at step 3: You pick up the apple 1. In the fridge 1, you see nothing. Looking around you, you also see a cabinet 2, a cabinet 9, a countertop 3, and a drawer 12."
+  },
+  {
+    "role": "assistant",
+    "content": "Belief: I am holding apple 1, and fridge 1 is still open.\nDesire: Keep receptacles closed after use, then place apple 1 in sinkbasin 1.\nIntention: close fridge 1"
+  },
+  {
+    "role": "user",
+    "content": "Observation at step 4: You close the fridge 1. Looking around you, you see a cabinet 2, a cabinet 9, a countertop 3, a drawer 12, and a fridge 1."
+  },
+  {
+    "role": "assistant",
+    "content": "Belief: I am holding apple 1, and fridge 1 is closed. The sinkbasin 1 is at the sink.\nDesire: Put apple 1 in sinkbasin 1.\nIntention: go to sink"
+  },
+  {
+    "role": "user",
+    "content": "Observation at step 5: You arrive at sink. On the countertop 1, you see a faucet 1 and a plate 1. Looking around you, you also see a sinkbasin 1."
+  },
+  {
+    "role": "assistant",
+    "content": "Belief: I am at the sink holding apple 1, and sinkbasin 1 is nearby.\nDesire: Complete the subtask by placing apple 1 in sinkbasin 1.\nIntention: put apple 1 in/on sinkbasin 1"
+  }
+]

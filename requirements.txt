@@ -1,0 +1,10 @@
+ai2thor
+matplotlib
+termcolor
+torch
+transformers
+huggingface_hub
+accelerate
+
+openai
+pandas

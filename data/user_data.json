@@ -1,0 +1,295 @@
+{
+    "action_execution_time": {
+        "exploration": {
+            "TeleportFull": {
+                "Avg": 4.46,
+                "Q1": 3.28,
+                "Q3": 4.78,
+                "calls": 70
+            },
+            "PickupObject": {
+                "Avg": null,
+                "Q1": null,
+                "Q3": null,
+                "calls": 0
+            },
+            "PutObject": {
+                "Avg": null,
+                "Q1": null,
+                "Q3": null,
+                "calls": 0
+            },
+            "OpenObject": {
+                "Avg": null,
+                "Q1": null,
+                "Q3": null,
+                "calls": 0
+            },
+            "CloseObject": {
+                "Avg": null,
+                "Q1": null,
+                "Q3": null,
+                "calls": 0
+            },
+            "ToggleObjectOn": {
+                "Avg": null,
+                "Q1": null,
+                "Q3": null,
+                "calls": 0
+            },
+            "ToggleObjectOff": {
+                "Avg": null,
+                "Q1": null,
+                "Q3": null,
+                "calls": 0
+            }
+        },
+        "rearrangement": {
+            "TeleportFull": {
+                "Avg": 5.78,
+                "Q1": 3.49,
+                "Q3": 6.50,
+                "calls": 213
+            },
+            "PickupObject": {
+                "Avg": 3.80,
+                "Q1": 2.53,
+                "Q3": 4.52,
+                "calls": 140
+            },
+            "PutObject": {
+                "Avg": 4.40,
+                "Q1": 2.68,
+                "Q3": 4.89,
+                "calls": 140
+            },
+            "OpenObject": {
+                "Avg": 4.49,
+                "Q1": 3.13,
+                "Q3": 5.43,
+                "calls": 131
+            },
+            "CloseObject": {
+                "Avg": 3.67,
+                "Q1": 2.53,
+                "Q3": 3.84,
+                "calls": 131
+            },
+            "ToggleObjectOn": {
+                "Avg": null,
+                "Q1": null,
+                "Q3": null,
+                "calls": 0
+            },
+            "ToggleObjectOff": {
+                "Avg": null,
+                "Q1": null,
+                "Q3": null,
+                "calls": 0
+            }
+        },
+        "findNplace": {
+            "TeleportFull": {
+                "Avg": 5.82,
+                "Q1": 2.83,
+                "Q3": 7.23,
+                "calls": 298
+            },
+            "PickupObject": {
+                "Avg": 3.99,
+                "Q1": 2.17,
+                "Q3": 4.54,
+                "calls": 70
+            },
+            "PutObject": {
+                "Avg": 3.28,
+                "Q1": 2.35,
+                "Q3": 3.57,
+                "calls": 70
+            },
+            "OpenObject": {
+                "Avg": 4.48,
+                "Q1": 2.21,
+                "Q3": 4.69,
+                "calls": 72
+            },
+            "CloseObject": {
+                "Avg": 2.73,
+                "Q1": 2.06,
+                "Q3": 3.20,
+                "calls": 72
+            },
+            "ToggleObjectOn": {
+                "Avg": 3.26,
+                "Q1": 2.26,
+                "Q3": 3.59,
+                "calls": 10
+            },
+            "ToggleObjectOff": {
+                "Avg": null,
+                "Q1": null,
+                "Q3": null,
+                "calls": 0
+            }
+        }
+    },
+    "dwell_time": {
+        "exploration": {
+            "door": {
+                "AVG": 13.25,
+                "STD": 3.58,
+                "Q1": 11.54,
+                "MED": 12.38,
+                "Q3": 14.73
+            },
+            "fridge": {
+                "AVG": 20.36,
+                "STD": 5.81,
+                "Q1": 16.73,
+                "MED": 18.64,
+                "Q3": 21.68
+            },
+            "sink": {
+                "AVG": 25.37,
+                "STD": 7.49,
+                "Q1": 18.33,
+                "MED": 24.29,
+                "Q3": 30.51
+            },
+            "table 1": {
+                "AVG": 24.38,
+                "STD": 9.06,
+                "Q1": 19.44,
+                "MED": 21.24,
+                "Q3": 22.97
+            },
+            "microwave": {
+                "AVG": 22.10,
+                "STD": 4.43,
+                "Q1": 17.94,
+                "MED": 22.68,
+                "Q3": 24.94
+            },
+            "stove": {
+                "AVG": 33.20,
+                "STD": 22.48,
+                "Q1": 19.90,
+                "MED": 25.17,
+                "Q3": 34.75
+            },
+            "table 2": {
+                "AVG": 23.44,
+                "STD": 6.76,
+                "Q1": 17.79,
+                "MED": 22.44,
+                "Q3": 27.12
+            }
+        },
+        "rearrangement": {
+            "door": {
+                "AVG": 15.31,
+                "STD": 6.68,
+                "Q1": 10.82,
+                "MED": 14.68,
+                "Q3": 18.46
+            },
+            "table 1": {
+                "AVG": 20.84,
+                "STD": 10.84,
+                "Q1": 14.42,
+                "MED": 18.27,
+                "Q3": 22.60
+            },
+            "microwave": {
+                "AVG": 49.33,
+                "STD": 27.93,
+                "Q1": 35.90,
+                "MED": 44.64,
+                "Q3": 54.89
+            },
+            "fridge": {
+                "AVG": 39.71,
+                "STD": 20.34,
+                "Q1": 26.48,
+                "MED": 42.07,
+                "Q3": 46.50
+            },
+            "stove": {
+                "AVG": 63.74,
+                "STD": 41.38,
+                "Q1": 29.84,
+                "MED": 62.31,
+                "Q3": 82.95
+            },
+            "table 2": {
+                "AVG": 17.35,
+                "STD": 6.42,
+                "Q1": 14.41,
+                "MED": 15.31,
+                "Q3": 21.57
+            },
+            "sink": {
+                "AVG": 58.68,
+                "STD": 45.03,
+                "Q1": 17.83,
+                "MED": 47.61,
+                "Q3": 102.60
+            }
+        },
+        "findNplace": {
+            "door": {
+                "AVG": 18.48,
+                "STD": 9.09,
+                "Q1": 11.72,
+                "MED": 15.33,
+                "Q3": 24.16
+            },
+            "fridge": {
+                "AVG": 23.85,
+                "STD": 12.43,
+                "Q1": 16.70,
+                "MED": 24.34,
+                "Q3": 29.45
+            },
+            "sink": {
+                "AVG": 34.68,
+                "STD": 28.34,
+                "Q1": 16.52,
+                "MED": 24.50,
+                "Q3": 43.83
+            },
+            "microwave": {
+                "AVG": 25.95,
+                "STD": 20.01,
+                "Q1": 12.32,
+                "MED": 21.72,
+                "Q3": 32.91
+            },
+            "stove": {
+                "AVG": 47.30,
+                "STD": 32.27,
+                "Q1": 28.38,
+                "MED": 38.49,
+                "Q3": 56.22
+            },
+            "table 1": {
+                "AVG": 11.35,
+                "STD": 7.23,
+                "Q1": 5.36,
+                "MED": 8.76,
+                "Q3": 17.29
+            },
+            "table 2": {
+                "AVG": 14.86,
+                "STD": 6.18,
+                "Q1": 11.21,
+                "MED": 12.42,
+                "Q3": 20.11
+            }
+        }
+    },
+    "break_time": {
+        "exploration_to_rearrangement": 60.0,
+        "rearrangement_to_findNplace": 180.0
+    }
+}
