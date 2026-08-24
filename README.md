@@ -50,6 +50,27 @@ Create and activate a Python environment, then install dependencies:
 pip install -r requirements.txt
 ```
 
+## Platform Notes
+
+### Apple Silicon Mac
+
+This project has been tested on an ARM-based Mac.
+
+Recommended setup:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+Then open `main.ipynb` and run the notebook cells from top to bottom.
+
+### Linux
+
+Linux setup instructions will be added later.
+
 ## Quick Start
 
 Open `main.ipynb` and run the cells from top to bottom. The notebook initializes the AI2-THOR household environment, creates the decision-making and memory-encoding agents, runs `run_agent_loop`, and saves the configured outputs.
