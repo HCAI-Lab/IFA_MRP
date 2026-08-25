@@ -1,0 +1,2976 @@
+[
+  {
+    "subtask_id": 1,
+    "subtask": "Place ‘tomato’ inside the microwave.",
+    "trajectories": [
+      "go to table 1",
+      "take tomato 1 from countertop 2",
+      "go to microwave",
+      "open microwave",
+      "put tomato 1 in/on microwave 1",
+      "close microwave"
+    ],
+    "state": {
+      "scene": "FloorPlan2",
+      "agent": {
+        "current_location": "Microwave",
+        "position": {
+          "x": 0.8500000238418579,
+          "y": 0.9009997844696045,
+          "z": -0.3499999940395355
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 150.0,
+          "z": 0.0
+        },
+        "inventory": []
+      },
+      "target_objects": {
+        "CounterTop 1": {
+          "objectId": "CounterTop|+00.00|+00.95|-01.51",
+          "objectType": "CounterTop",
+          "position": {
+            "x": 0.0020000000949949026,
+            "y": 0.9470000267028809,
+            "z": -1.5130000114440918
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "CounterTop 2": {
+          "objectId": "CounterTop|-00.02|+00.96|+00.51",
+          "objectType": "CounterTop",
+          "position": {
+            "x": -0.014999999664723873,
+            "y": 0.9610999822616577,
+            "z": 0.5059999823570251
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Microwave 1": {
+          "objectId": "Microwave|+01.93|+00.90|-00.77",
+          "objectType": "Microwave",
+          "position": {
+            "x": 1.9329701662063599,
+            "y": 0.9021120071411133,
+            "z": -0.7668669819831848
+          },
+          "rotation": {
+            "x": 0.034767281264066696,
+            "y": 270.0015563964844,
+            "z": 0.32465246319770813
+          },
+          "parentReceptacles": [
+            "CounterTop|+00.00|+00.95|-01.51"
+          ],
+          "parentReceptacleNames": [
+            "CounterTop 1"
+          ],
+          "isOpen": false,
+          "openable": true,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Tomato 1": {
+          "objectId": "Tomato|+00.17|+00.97|-00.28",
+          "objectType": "Tomato",
+          "position": {
+            "x": 1.9242355823516846,
+            "y": 1.0748367309570312,
+            "z": -0.7051445245742798
+          },
+          "rotation": {
+            "x": 89.67494201660156,
+            "y": 6.115109920501709,
+            "z": 96.1136245727539
+          },
+          "parentReceptacles": [
+            "CounterTop|+00.00|+00.95|-01.51",
+            "Microwave|+01.93|+00.90|-00.77"
+          ],
+          "parentReceptacleNames": [
+            "CounterTop 1",
+            "Microwave 1"
+          ],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": true
+        }
+      }
+    }
+  },
+  {
+    "subtask_id": 2,
+    "subtask": "Place ‘egg’ inside the fridge.",
+    "trajectories": [
+      "go to table 1",
+      "take egg 1 from countertop 2",
+      "go to fridge",
+      "open fridge 1",
+      "put egg 1 in/on fridge 1",
+      "close fridge 1"
+    ],
+    "state": {
+      "scene": "FloorPlan2",
+      "agent": {
+        "current_location": "Fridge",
+        "position": {
+          "x": -0.75,
+          "y": 0.9009997844696045,
+          "z": 0.0
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 270.0,
+          "z": 0.0
+        },
+        "inventory": []
+      },
+      "target_objects": {
+        "CounterTop 2": {
+          "objectId": "CounterTop|-00.02|+00.96|+00.51",
+          "objectType": "CounterTop",
+          "position": {
+            "x": -0.014999999664723873,
+            "y": 0.9610999822616577,
+            "z": 0.5059999823570251
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Egg 1": {
+          "objectId": "Egg|+00.13|+00.95|-00.17",
+          "objectType": "Egg",
+          "position": {
+            "x": -1.752530813217163,
+            "y": 1.0013986825942993,
+            "z": -0.26136279106140137
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 90.0,
+            "z": -0.0
+          },
+          "parentReceptacles": [
+            "Fridge|-01.76|+00.00|00.00"
+          ],
+          "parentReceptacleNames": [
+            "Fridge 1"
+          ],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": true
+        },
+        "Floor": {
+          "objectId": "Floor|+00.00|+00.00|+00.00",
+          "objectType": "Floor",
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Fridge 1": {
+          "objectId": "Fridge|-01.76|+00.00|00.00",
+          "objectType": "Fridge",
+          "position": {
+            "x": -1.7640000581741333,
+            "y": 0.0,
+            "z": -0.0010000000474974513
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 90.0,
+            "z": -0.0
+          },
+          "parentReceptacles": [
+            "Floor|+00.00|+00.00|+00.00"
+          ],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": true,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        }
+      }
+    }
+  },
+  {
+    "subtask_id": 3,
+    "subtask": "Place ‘spatula’ inside the top-right drawer below the stove.",
+    "trajectories": [
+      "go to stove",
+      "take spatula 1 from countertop 1",
+      "open drawer 3",
+      "put spatula 1 in/on drawer 3",
+      "close drawer 3"
+    ],
+    "state": {
+      "scene": "FloorPlan2",
+      "agent": {
+        "current_location": "Stove",
+        "position": {
+          "x": 0.75,
+          "y": 0.9009997844696045,
+          "z": 0.75
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 90.0,
+          "z": 0.0
+        },
+        "inventory": []
+      },
+      "target_objects": {
+        "CounterTop 1": {
+          "objectId": "CounterTop|+00.00|+00.95|-01.51",
+          "objectType": "CounterTop",
+          "position": {
+            "x": 0.0020000000949949026,
+            "y": 0.9470000267028809,
+            "z": -1.5130000114440918
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Drawer 3": {
+          "objectId": "Drawer|+01.50|+00.63|-00.02",
+          "objectType": "Drawer",
+          "position": {
+            "x": 1.5,
+            "y": 0.6299999952316284,
+            "z": -0.01899999938905239
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": true,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Spatula 1": {
+          "objectId": "Spatula|+01.78|+00.91|-00.13",
+          "objectType": "Spatula",
+          "position": {
+            "x": 1.8602814674377441,
+            "y": 0.6980093717575073,
+            "z": 0.1135166808962822
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 180.0,
+            "z": -0.0
+          },
+          "parentReceptacles": [
+            "Drawer|+01.50|+00.63|-00.02"
+          ],
+          "parentReceptacleNames": [
+            "Drawer 3"
+          ],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": true
+        },
+        "StoveBurner 1": {
+          "objectId": "StoveBurner|+01.77|+00.90|+00.60",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.7649999856948853,
+            "y": 0.902899980545044,
+            "z": 0.6014999747276306
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 2": {
+          "objectId": "StoveBurner|+01.98|+00.90|+00.38",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.9752999544143677,
+            "y": 0.902899980545044,
+            "z": 0.3846000134944916
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 3": {
+          "objectId": "StoveBurner|+01.98|+00.90|+00.82",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.9752999544143677,
+            "y": 0.902899980545044,
+            "z": 0.8191999793052673
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 4": {
+          "objectId": "StoveBurner|+01.77|+00.90|+00.38",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.7649999856948853,
+            "y": 0.902899980545044,
+            "z": 0.3846000134944916
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 5": {
+          "objectId": "StoveBurner|+01.98|+00.90|+00.60",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.9752999544143677,
+            "y": 0.902899980545044,
+            "z": 0.6014999747276306
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 6": {
+          "objectId": "StoveBurner|+01.77|+00.90|+00.82",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.7649999856948853,
+            "y": 0.902899980545044,
+            "z": 0.8191999793052673
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 1": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.46",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.4625000059604645
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 2": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.68",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.6809999942779541
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 3": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.74",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.7396000027656555
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 4": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.63",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.6255000233650208
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 5": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.57",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.5705999732017517
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 6": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.52",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.5170999765396118
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        }
+      }
+    }
+  },
+  {
+    "subtask_id": 4,
+    "subtask": "Place ‘kettle’ inside the cabinet above the coffee machine.",
+    "trajectories": [
+      "take kettle 1 from countertop 1",
+      "go to microwave",
+      "open cabinet 8",
+      "put kettle 1 in/on cabinet 8",
+      "close cabinet 8"
+    ],
+    "state": {
+      "scene": "FloorPlan2",
+      "agent": {
+        "current_location": "Microwave",
+        "position": {
+          "x": 0.8500000238418579,
+          "y": 0.9009997844696045,
+          "z": -0.3499999940395355
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 150.0,
+          "z": 0.0
+        },
+        "inventory": []
+      },
+      "target_objects": {
+        "Cabinet 8": {
+          "objectId": "Cabinet|+01.71|+02.02|-01.45",
+          "objectType": "Cabinet",
+          "position": {
+            "x": 1.7055000066757202,
+            "y": 2.0199999809265137,
+            "z": -1.4492499828338623
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": true,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "CounterTop 1": {
+          "objectId": "CounterTop|+00.00|+00.95|-01.51",
+          "objectType": "CounterTop",
+          "position": {
+            "x": 0.0020000000949949026,
+            "y": 0.9470000267028809,
+            "z": -1.5130000114440918
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Kettle 1": {
+          "objectId": "Kettle|+01.68|+00.90|+00.09",
+          "objectType": "Kettle",
+          "position": {
+            "x": 1.5878362655639648,
+            "y": 1.6790177822113037,
+            "z": -1.5770598649978638
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 3.4150941701227566e-06,
+            "z": -0.0
+          },
+          "parentReceptacles": [
+            "Cabinet|+01.71|+02.02|-01.45"
+          ],
+          "parentReceptacleNames": [
+            "Cabinet 8"
+          ],
+          "isOpen": false,
+          "openable": true,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": true
+        },
+        "Microwave 1": {
+          "objectId": "Microwave|+01.93|+00.90|-00.77",
+          "objectType": "Microwave",
+          "position": {
+            "x": 1.9329701662063599,
+            "y": 0.9021120071411133,
+            "z": -0.7668669819831848
+          },
+          "rotation": {
+            "x": 0.034767281264066696,
+            "y": 270.0015563964844,
+            "z": 0.32465246319770813
+          },
+          "parentReceptacles": [
+            "CounterTop|+00.00|+00.95|-01.51"
+          ],
+          "parentReceptacleNames": [
+            "CounterTop 1"
+          ],
+          "isOpen": false,
+          "openable": true,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        }
+      }
+    }
+  },
+  {
+    "subtask_id": 5,
+    "subtask": "Place ‘pot’ on any of the stove burners.",
+    "trajectories": [
+      "take pot 1 from countertop 1",
+      "go to stove",
+      "put pot 1 in/on stoveburner 2"
+    ],
+    "state": {
+      "scene": "FloorPlan2",
+      "agent": {
+        "current_location": "Stove",
+        "position": {
+          "x": 0.75,
+          "y": 0.9009997844696045,
+          "z": 0.75
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 90.0,
+          "z": 0.0
+        },
+        "inventory": []
+      },
+      "target_objects": {
+        "CounterTop 1": {
+          "objectId": "CounterTop|+00.00|+00.95|-01.51",
+          "objectType": "CounterTop",
+          "position": {
+            "x": 0.0020000000949949026,
+            "y": 0.9470000267028809,
+            "z": -1.5130000114440918
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Pot 1": {
+          "objectId": "Pot|+00.89|+00.90|-01.41",
+          "objectType": "Pot",
+          "position": {
+            "x": 1.9753001928329468,
+            "y": 0.9382999539375305,
+            "z": 0.3845999240875244
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 180.00021362304688,
+            "z": 0.0
+          },
+          "parentReceptacles": [
+            "CounterTop|+00.00|+00.95|-01.51",
+            "StoveBurner|+01.98|+00.90|+00.38",
+            "StoveBurner|+01.77|+00.90|+00.38",
+            "StoveBurner|+01.98|+00.90|+00.60"
+          ],
+          "parentReceptacleNames": [
+            "CounterTop 1",
+            "StoveBurner 2",
+            "StoveBurner 4",
+            "StoveBurner 5"
+          ],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": true
+        },
+        "StoveBurner 1": {
+          "objectId": "StoveBurner|+01.77|+00.90|+00.60",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.7649999856948853,
+            "y": 0.902899980545044,
+            "z": 0.6014999747276306
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 2": {
+          "objectId": "StoveBurner|+01.98|+00.90|+00.38",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.9752999544143677,
+            "y": 0.902899980545044,
+            "z": 0.3846000134944916
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 3": {
+          "objectId": "StoveBurner|+01.98|+00.90|+00.82",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.9752999544143677,
+            "y": 0.902899980545044,
+            "z": 0.8191999793052673
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 4": {
+          "objectId": "StoveBurner|+01.77|+00.90|+00.38",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.7649999856948853,
+            "y": 0.902899980545044,
+            "z": 0.3846000134944916
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 5": {
+          "objectId": "StoveBurner|+01.98|+00.90|+00.60",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.9752999544143677,
+            "y": 0.902899980545044,
+            "z": 0.6014999747276306
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 6": {
+          "objectId": "StoveBurner|+01.77|+00.90|+00.82",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.7649999856948853,
+            "y": 0.902899980545044,
+            "z": 0.8191999793052673
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 1": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.46",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.4625000059604645
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 2": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.68",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.6809999942779541
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 3": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.74",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.7396000027656555
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 4": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.63",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.6255000233650208
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 5": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.57",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.5705999732017517
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 6": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.52",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.5170999765396118
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        }
+      }
+    }
+  },
+  {
+    "subtask_id": 6,
+    "subtask": "Place ‘spoon’ inside the bottom-right drawer below the stove.",
+    "trajectories": [
+      "take spoon 1 from countertop 1",
+      "open drawer 2",
+      "put spoon 1 in/on drawer 2",
+      "close drawer 2"
+    ],
+    "state": {
+      "scene": "FloorPlan2",
+      "agent": {
+        "current_location": "Stove",
+        "position": {
+          "x": 0.75,
+          "y": 0.9009997844696045,
+          "z": 0.75
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 90.0,
+          "z": 0.0
+        },
+        "inventory": []
+      },
+      "target_objects": {
+        "CounterTop 1": {
+          "objectId": "CounterTop|+00.00|+00.95|-01.51",
+          "objectType": "CounterTop",
+          "position": {
+            "x": 0.0020000000949949026,
+            "y": 0.9470000267028809,
+            "z": -1.5130000114440918
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Drawer 2": {
+          "objectId": "Drawer|+01.50|+00.20|-00.02",
+          "objectType": "Drawer",
+          "position": {
+            "x": 1.5,
+            "y": 0.1965000033378601,
+            "z": -0.019999999552965164
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": true,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Spoon 1": {
+          "objectId": "Spoon|+01.62|+00.90|+01.40",
+          "objectType": "Spoon",
+          "position": {
+            "x": 1.8668087720870972,
+            "y": 0.2328236699104309,
+            "z": 0.11614453792572021
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [
+            "Drawer|+01.50|+00.20|-00.02"
+          ],
+          "parentReceptacleNames": [
+            "Drawer 2"
+          ],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": true
+        }
+      }
+    }
+  },
+  {
+    "subtask_id": 7,
+    "subtask": "Place ‘ladle’ inside the drawer below the countertop next to the sink.",
+    "trajectories": [
+      "take ladle 1 from countertop 1",
+      "go to sink",
+      "open drawer 12",
+      "put ladle 1 in/on drawer 12",
+      "close drawer 12"
+    ],
+    "state": {
+      "scene": "FloorPlan2",
+      "agent": {
+        "current_location": "Sink",
+        "position": {
+          "x": -0.75,
+          "y": 0.9009997844696045,
+          "z": -0.5
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 180.0,
+          "z": 0.0
+        },
+        "inventory": []
+      },
+      "target_objects": {
+        "CounterTop 1": {
+          "objectId": "CounterTop|+00.00|+00.95|-01.51",
+          "objectType": "CounterTop",
+          "position": {
+            "x": 0.0020000000949949026,
+            "y": 0.9470000267028809,
+            "z": -1.5130000114440918
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Drawer 12": {
+          "objectId": "Drawer|-00.70|+00.48|-01.16",
+          "objectType": "Drawer",
+          "position": {
+            "x": -0.6965000033378601,
+            "y": 0.4749999940395355,
+            "z": -1.159999966621399
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": true,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Ladle 1": {
+          "objectId": "Ladle|+01.79|+00.93|+01.13",
+          "objectType": "Ladle",
+          "position": {
+            "x": -0.6997603178024292,
+            "y": 0.7129496335983276,
+            "z": -1.2400500774383545
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 89.99998474121094,
+            "z": -0.0
+          },
+          "parentReceptacles": [
+            "Drawer|-00.70|+00.48|-01.16"
+          ],
+          "parentReceptacleNames": [
+            "Drawer 12"
+          ],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": true
+        },
+        "Sink 1": {
+          "objectId": "Sink|+00.00|+00.89|-01.44",
+          "objectType": "Sink",
+          "position": {
+            "x": 0.0,
+            "y": 0.8939999938011169,
+            "z": -1.434999942779541
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "SinkBasin 1": {
+          "objectId": "Sink|+00.00|+00.89|-01.44|SinkBasin",
+          "objectType": "SinkBasin",
+          "position": {
+            "x": -0.014999999664723873,
+            "y": 0.7369999885559082,
+            "z": -1.4355000257492065
+          },
+          "rotation": {
+            "x": 1.403341910044412e-14,
+            "y": -0.0,
+            "z": -0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        }
+      }
+    }
+  },
+  {
+    "subtask_id": 8,
+    "subtask": "Place ‘soap bottle’ inside the cabinet above the sink.",
+    "trajectories": [
+      "take soapbottle 1 from countertop 1",
+      "open cabinet 3",
+      "put soapbottle 1 in/on cabinet 3",
+      "close cabinet 3"
+    ],
+    "state": {
+      "scene": "FloorPlan2",
+      "agent": {
+        "current_location": "Sink",
+        "position": {
+          "x": -0.75,
+          "y": 0.9009997844696045,
+          "z": -0.5
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 180.0,
+          "z": 0.0
+        },
+        "inventory": []
+      },
+      "target_objects": {
+        "Cabinet 3": {
+          "objectId": "Cabinet|-00.63|+02.02|-01.45",
+          "objectType": "Cabinet",
+          "position": {
+            "x": -0.6270999908447266,
+            "y": 2.0199999809265137,
+            "z": -1.4492499828338623
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": true,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "CounterTop 1": {
+          "objectId": "CounterTop|+00.00|+00.95|-01.51",
+          "objectType": "CounterTop",
+          "position": {
+            "x": 0.0020000000949949026,
+            "y": 0.9470000267028809,
+            "z": -1.5130000114440918
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "SoapBottle 1": {
+          "objectId": "SoapBottle|-00.56|+00.90|-01.57",
+          "objectType": "SoapBottle",
+          "position": {
+            "x": -0.7447637319564819,
+            "y": 1.6747403144836426,
+            "z": -1.5393697023391724
+          },
+          "rotation": {
+            "x": -1.3346536565323227e-20,
+            "y": 4.071109497693487e-13,
+            "z": -3.0533323265580226e-13
+          },
+          "parentReceptacles": [
+            "Cabinet|-00.63|+02.02|-01.45"
+          ],
+          "parentReceptacleNames": [
+            "Cabinet 3"
+          ],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": true
+        }
+      }
+    }
+  },
+  {
+    "subtask_id": 9,
+    "subtask": "Place ‘dish sponge’ inside the top-left drawer below the stove.",
+    "trajectories": [
+      "take dishsponge 1 from countertop 1",
+      "go to stove",
+      "open drawer 7",
+      "put dishsponge 1 in/on drawer 7",
+      "close drawer 7"
+    ],
+    "state": {
+      "scene": "FloorPlan2",
+      "agent": {
+        "current_location": "Stove",
+        "position": {
+          "x": 0.75,
+          "y": 0.9009997844696045,
+          "z": 0.75
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 90.0,
+          "z": 0.0
+        },
+        "inventory": []
+      },
+      "target_objects": {
+        "CounterTop 1": {
+          "objectId": "CounterTop|+00.00|+00.95|-01.51",
+          "objectType": "CounterTop",
+          "position": {
+            "x": 0.0020000000949949026,
+            "y": 0.9470000267028809,
+            "z": -1.5130000114440918
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "DishSponge 1": {
+          "objectId": "DishSponge|-00.55|+00.92|-01.39",
+          "objectType": "DishSponge",
+          "position": {
+            "x": 1.603508472442627,
+            "y": 0.7601945996284485,
+            "z": 1.4386794567108154
+          },
+          "rotation": {
+            "x": -4.762424262261774e-37,
+            "y": 270.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [
+            "Drawer|+01.50|+00.78|+01.22"
+          ],
+          "parentReceptacleNames": [
+            "Drawer 7"
+          ],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": true
+        },
+        "Drawer 7": {
+          "objectId": "Drawer|+01.50|+00.78|+01.22",
+          "objectType": "Drawer",
+          "position": {
+            "x": 1.5,
+            "y": 0.7825999855995178,
+            "z": 1.2200000286102295
+          },
+          "rotation": {
+            "x": -7.062251193751548e-30,
+            "y": 270.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": true,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 1": {
+          "objectId": "StoveBurner|+01.77|+00.90|+00.60",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.7649999856948853,
+            "y": 0.902899980545044,
+            "z": 0.6014999747276306
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 2": {
+          "objectId": "StoveBurner|+01.98|+00.90|+00.38",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.9752999544143677,
+            "y": 0.902899980545044,
+            "z": 0.3846000134944916
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 3": {
+          "objectId": "StoveBurner|+01.98|+00.90|+00.82",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.9752999544143677,
+            "y": 0.902899980545044,
+            "z": 0.8191999793052673
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 4": {
+          "objectId": "StoveBurner|+01.77|+00.90|+00.38",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.7649999856948853,
+            "y": 0.902899980545044,
+            "z": 0.3846000134944916
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 5": {
+          "objectId": "StoveBurner|+01.98|+00.90|+00.60",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.9752999544143677,
+            "y": 0.902899980545044,
+            "z": 0.6014999747276306
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 6": {
+          "objectId": "StoveBurner|+01.77|+00.90|+00.82",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.7649999856948853,
+            "y": 0.902899980545044,
+            "z": 0.8191999793052673
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 1": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.46",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.4625000059604645
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 2": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.68",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.6809999942779541
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 3": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.74",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.7396000027656555
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 4": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.63",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.6255000233650208
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 5": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.57",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.5705999732017517
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 6": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.52",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.5170999765396118
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        }
+      }
+    }
+  },
+  {
+    "subtask_id": 10,
+    "subtask": "Place ‘fork’ inside the second drawer from the top at the center below the stove.",
+    "trajectories": [
+      "take fork 1 from countertop 1",
+      "open drawer 9",
+      "put fork 1 in/on drawer 9",
+      "close drawer 9"
+    ],
+    "state": {
+      "scene": "FloorPlan2",
+      "agent": {
+        "current_location": "Stove",
+        "position": {
+          "x": 0.75,
+          "y": 0.9009997844696045,
+          "z": 0.75
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 90.0,
+          "z": 0.0
+        },
+        "inventory": []
+      },
+      "target_objects": {
+        "CounterTop 1": {
+          "objectId": "CounterTop|+00.00|+00.95|-01.51",
+          "objectType": "CounterTop",
+          "position": {
+            "x": 0.0020000000949949026,
+            "y": 0.9470000267028809,
+            "z": -1.5130000114440918
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Drawer 9": {
+          "objectId": "Drawer|+01.50|+00.54|+00.60",
+          "objectType": "Drawer",
+          "position": {
+            "x": 1.5,
+            "y": 0.5389999747276306,
+            "z": 0.6000000238418579
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": true,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Fork 1": {
+          "objectId": "Fork|+01.69|+00.90|+01.45",
+          "objectType": "Fork",
+          "position": {
+            "x": 1.866808533668518,
+            "y": 0.5773829817771912,
+            "z": 0.7361447215080261
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [
+            "Drawer|+01.50|+00.54|+00.60"
+          ],
+          "parentReceptacleNames": [
+            "Drawer 9"
+          ],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": true
+        }
+      }
+    }
+  },
+  {
+    "subtask_id": 11,
+    "subtask": "Place ‘bowl’ inside the cabinet below the coffee machine.",
+    "trajectories": [
+      "go to table 2",
+      "take bowl 1 from countertop 2",
+      "go to microwave",
+      "open cabinet 9",
+      "put bowl 1 in/on cabinet 9",
+      "close cabinet 9"
+    ],
+    "state": {
+      "scene": "FloorPlan2",
+      "agent": {
+        "current_location": "Microwave",
+        "position": {
+          "x": 0.8500000238418579,
+          "y": 0.9009997844696045,
+          "z": -0.3499999940395355
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 150.0,
+          "z": 0.0
+        },
+        "inventory": []
+      },
+      "target_objects": {
+        "Bowl 1": {
+          "objectId": "Bowl|+00.28|+00.92|+01.09",
+          "objectType": "Bowl",
+          "position": {
+            "x": 1.234876036643982,
+            "y": 0.10524660348892212,
+            "z": -1.289544701576233
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 3.4150941701227566e-06,
+            "z": -0.0
+          },
+          "parentReceptacles": [
+            "Cabinet|+01.39|+00.48|-01.15"
+          ],
+          "parentReceptacleNames": [
+            "Cabinet 9"
+          ],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": true
+        },
+        "Cabinet 9": {
+          "objectId": "Cabinet|+01.39|+00.48|-01.15",
+          "objectType": "Cabinet",
+          "position": {
+            "x": 1.3899999856948853,
+            "y": 0.4749999940395355,
+            "z": -1.1499998569488525
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": true,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "CounterTop 1": {
+          "objectId": "CounterTop|+00.00|+00.95|-01.51",
+          "objectType": "CounterTop",
+          "position": {
+            "x": 0.0020000000949949026,
+            "y": 0.9470000267028809,
+            "z": -1.5130000114440918
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "CounterTop 2": {
+          "objectId": "CounterTop|-00.02|+00.96|+00.51",
+          "objectType": "CounterTop",
+          "position": {
+            "x": -0.014999999664723873,
+            "y": 0.9610999822616577,
+            "z": 0.5059999823570251
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Microwave 1": {
+          "objectId": "Microwave|+01.93|+00.90|-00.77",
+          "objectType": "Microwave",
+          "position": {
+            "x": 1.9329701662063599,
+            "y": 0.9021120071411133,
+            "z": -0.7668669819831848
+          },
+          "rotation": {
+            "x": 0.034767281264066696,
+            "y": 270.0015563964844,
+            "z": 0.32465246319770813
+          },
+          "parentReceptacles": [
+            "CounterTop|+00.00|+00.95|-01.51"
+          ],
+          "parentReceptacleNames": [
+            "CounterTop 1"
+          ],
+          "isOpen": false,
+          "openable": true,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        }
+      }
+    }
+  },
+  {
+    "subtask_id": 12,
+    "subtask": "Place ‘knife’ inside the second drawer from the bottom at the center below the stove.",
+    "trajectories": [
+      "take knife 1 from countertop 1",
+      "go to stove",
+      "open drawer 8",
+      "put knife 1 in/on drawer 8",
+      "close drawer 8"
+    ],
+    "state": {
+      "scene": "FloorPlan2",
+      "agent": {
+        "current_location": "Stove",
+        "position": {
+          "x": 0.75,
+          "y": 0.9009997844696045,
+          "z": 0.75
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 90.0,
+          "z": 0.0
+        },
+        "inventory": []
+      },
+      "target_objects": {
+        "CounterTop 1": {
+          "objectId": "CounterTop|+00.00|+00.95|-01.51",
+          "objectType": "CounterTop",
+          "position": {
+            "x": 0.0020000000949949026,
+            "y": 0.9470000267028809,
+            "z": -1.5130000114440918
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Drawer 8": {
+          "objectId": "Drawer|+01.50|+00.31|+00.60",
+          "objectType": "Drawer",
+          "position": {
+            "x": 1.5,
+            "y": 0.3059999942779541,
+            "z": 0.6000000238418579
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": true,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Knife 1": {
+          "objectId": "Knife|+00.60|+00.91|-01.44",
+          "objectType": "Knife",
+          "position": {
+            "x": 1.8668086528778076,
+            "y": 0.36697322130203247,
+            "z": 0.6677724123001099
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 180.0,
+            "z": -0.0
+          },
+          "parentReceptacles": [
+            "Drawer|+01.50|+00.31|+00.60"
+          ],
+          "parentReceptacleNames": [
+            "Drawer 8"
+          ],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": true
+        },
+        "StoveBurner 1": {
+          "objectId": "StoveBurner|+01.77|+00.90|+00.60",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.7649999856948853,
+            "y": 0.902899980545044,
+            "z": 0.6014999747276306
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 2": {
+          "objectId": "StoveBurner|+01.98|+00.90|+00.38",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.9752999544143677,
+            "y": 0.902899980545044,
+            "z": 0.3846000134944916
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 3": {
+          "objectId": "StoveBurner|+01.98|+00.90|+00.82",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.9752999544143677,
+            "y": 0.902899980545044,
+            "z": 0.8191999793052673
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 4": {
+          "objectId": "StoveBurner|+01.77|+00.90|+00.38",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.7649999856948853,
+            "y": 0.902899980545044,
+            "z": 0.3846000134944916
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 5": {
+          "objectId": "StoveBurner|+01.98|+00.90|+00.60",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.9752999544143677,
+            "y": 0.902899980545044,
+            "z": 0.6014999747276306
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 6": {
+          "objectId": "StoveBurner|+01.77|+00.90|+00.82",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.7649999856948853,
+            "y": 0.902899980545044,
+            "z": 0.8191999793052673
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 1": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.46",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.4625000059604645
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 2": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.68",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.6809999942779541
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 3": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.74",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.7396000027656555
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 4": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.63",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.6255000233650208
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 5": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.57",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.5705999732017517
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 6": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.52",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.5170999765396118
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        }
+      }
+    }
+  },
+  {
+    "subtask_id": 13,
+    "subtask": "Find ‘cup’ from the cabinet above the coffee machine and place it inside the left-most cabinet below the sink.",
+    "trajectories": [
+      "go to microwave",
+      "open cabinet 8",
+      "take cup 1 from cabinet 8",
+      "close cabinet 8",
+      "go to sink",
+      "open cabinet 6",
+      "put cup 1 in/on cabinet 6",
+      "close cabinet 6"
+    ],
+    "state": {
+      "scene": "FloorPlan2",
+      "agent": {
+        "current_location": "Sink",
+        "position": {
+          "x": -0.75,
+          "y": 0.9009997844696045,
+          "z": -0.5
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 180.0,
+          "z": 0.0
+        },
+        "inventory": []
+      },
+      "target_objects": {
+        "Cabinet 6": {
+          "objectId": "Cabinet|+00.50|+00.48|-01.15",
+          "objectType": "Cabinet",
+          "position": {
+            "x": 0.4949999749660492,
+            "y": 0.4749999940395355,
+            "z": -1.149999976158142
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": true,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Cabinet 8": {
+          "objectId": "Cabinet|+01.71|+02.02|-01.45",
+          "objectType": "Cabinet",
+          "position": {
+            "x": 1.7055000066757202,
+            "y": 2.0199999809265137,
+            "z": -1.4492499828338623
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": true,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "CounterTop 1": {
+          "objectId": "CounterTop|+00.00|+00.95|-01.51",
+          "objectType": "CounterTop",
+          "position": {
+            "x": 0.0020000000949949026,
+            "y": 0.9470000267028809,
+            "z": -1.5130000114440918
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Cup 1": {
+          "objectId": "Cup|+00.90|+01.67|-01.61",
+          "objectType": "Cup",
+          "position": {
+            "x": 0.41774940490722656,
+            "y": 0.10787159204483032,
+            "z": -1.220130443572998
+          },
+          "rotation": {
+            "x": -1.3346536565323227e-20,
+            "y": 4.071109497693487e-13,
+            "z": -3.0533323265580226e-13
+          },
+          "parentReceptacles": [
+            "Cabinet|+00.50|+00.48|-01.15"
+          ],
+          "parentReceptacleNames": [
+            "Cabinet 6"
+          ],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": true
+        },
+        "Microwave 1": {
+          "objectId": "Microwave|+01.93|+00.90|-00.77",
+          "objectType": "Microwave",
+          "position": {
+            "x": 1.9329701662063599,
+            "y": 0.9021120071411133,
+            "z": -0.7668669819831848
+          },
+          "rotation": {
+            "x": 0.034767281264066696,
+            "y": 270.0015563964844,
+            "z": 0.32465246319770813
+          },
+          "parentReceptacles": [
+            "CounterTop|+00.00|+00.95|-01.51"
+          ],
+          "parentReceptacleNames": [
+            "CounterTop 1"
+          ],
+          "isOpen": false,
+          "openable": true,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Sink 1": {
+          "objectId": "Sink|+00.00|+00.89|-01.44",
+          "objectType": "Sink",
+          "position": {
+            "x": 0.0,
+            "y": 0.8939999938011169,
+            "z": -1.434999942779541
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "SinkBasin 1": {
+          "objectId": "Sink|+00.00|+00.89|-01.44|SinkBasin",
+          "objectType": "SinkBasin",
+          "position": {
+            "x": -0.014999999664723873,
+            "y": 0.7369999885559082,
+            "z": -1.4355000257492065
+          },
+          "rotation": {
+            "x": 1.403341910044412e-14,
+            "y": -0.0,
+            "z": -0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        }
+      }
+    }
+  },
+  {
+    "subtask_id": 14,
+    "subtask": "Place ‘pan’ on any of the stove burners.",
+    "trajectories": [
+      "take pan 1 from countertop 1",
+      "go to stove",
+      "put pan 1 in/on stoveburner 6"
+    ],
+    "state": {
+      "scene": "FloorPlan2",
+      "agent": {
+        "current_location": "Stove",
+        "position": {
+          "x": 0.75,
+          "y": 0.9009997844696045,
+          "z": 0.75
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 90.0,
+          "z": 0.0
+        },
+        "inventory": []
+      },
+      "target_objects": {
+        "CounterTop 1": {
+          "objectId": "CounterTop|+00.00|+00.95|-01.51",
+          "objectType": "CounterTop",
+          "position": {
+            "x": 0.0020000000949949026,
+            "y": 0.9470000267028809,
+            "z": -1.5130000114440918
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "Pan 1": {
+          "objectId": "Pan|-01.29|+00.90|-01.35",
+          "objectType": "Pan",
+          "position": {
+            "x": 1.7650002241134644,
+            "y": 0.9382998943328857,
+            "z": 0.8192000389099121
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 180.00021362304688,
+            "z": 0.0
+          },
+          "parentReceptacles": [
+            "CounterTop|+00.00|+00.95|-01.51",
+            "StoveBurner|+01.77|+00.90|+00.60",
+            "StoveBurner|+01.98|+00.90|+00.82",
+            "StoveBurner|+01.77|+00.90|+00.82"
+          ],
+          "parentReceptacleNames": [
+            "CounterTop 1",
+            "StoveBurner 1",
+            "StoveBurner 3",
+            "StoveBurner 6"
+          ],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": true
+        },
+        "StoveBurner 1": {
+          "objectId": "StoveBurner|+01.77|+00.90|+00.60",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.7649999856948853,
+            "y": 0.902899980545044,
+            "z": 0.6014999747276306
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 2": {
+          "objectId": "StoveBurner|+01.98|+00.90|+00.38",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.9752999544143677,
+            "y": 0.902899980545044,
+            "z": 0.3846000134944916
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 3": {
+          "objectId": "StoveBurner|+01.98|+00.90|+00.82",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.9752999544143677,
+            "y": 0.902899980545044,
+            "z": 0.8191999793052673
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 4": {
+          "objectId": "StoveBurner|+01.77|+00.90|+00.38",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.7649999856948853,
+            "y": 0.902899980545044,
+            "z": 0.3846000134944916
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 5": {
+          "objectId": "StoveBurner|+01.98|+00.90|+00.60",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.9752999544143677,
+            "y": 0.902899980545044,
+            "z": 0.6014999747276306
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveBurner 6": {
+          "objectId": "StoveBurner|+01.77|+00.90|+00.82",
+          "objectType": "StoveBurner",
+          "position": {
+            "x": 1.7649999856948853,
+            "y": 0.902899980545044,
+            "z": 0.8191999793052673
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 270.00018310546875,
+            "z": 0.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": false,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 1": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.46",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.4625000059604645
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 2": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.68",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.6809999942779541
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 3": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.74",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.7396000027656555
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 4": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.63",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.6255000233650208
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 5": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.57",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.5705999732017517
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        },
+        "StoveKnob 6": {
+          "objectId": "StoveKnob|+01.60|+00.92|+00.52",
+          "objectType": "StoveKnob",
+          "position": {
+            "x": 1.6024999618530273,
+            "y": 0.9173359870910645,
+            "z": 0.5170999765396118
+          },
+          "rotation": {
+            "x": -0.0,
+            "y": 269.9999694824219,
+            "z": 180.0
+          },
+          "parentReceptacles": [],
+          "parentReceptacleNames": [],
+          "isOpen": false,
+          "openable": false,
+          "isToggled": false,
+          "toggleable": true,
+          "isPickedUp": false,
+          "pickupable": false
+        }
+      }
+    }
+  },
+  {
+    "subtask_id": 15,
+    "subtask": "Move to the position 'Door'.",
+    "trajectories": [
+      "go to door"
+    ],
+    "state": {
+      "scene": "FloorPlan2",
+      "agent": {
+        "current_location": "Door",
+        "position": {
+          "x": -0.75,
+          "y": 0.9009997844696045,
+          "z": 3.0
+        },
+        "rotation": {
+          "x": -0.0,
+          "y": 180.0,
+          "z": 0.0
+        },
+        "inventory": []
+      },
+      "target_objects": {}
+    }
+  }
+]

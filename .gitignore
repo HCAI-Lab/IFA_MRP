@@ -3,7 +3,6 @@ __pycache__/
 *.py[cod]
 
 # Virtual environments
-env/
 .venv/
 venv/
 
@@ -13,4 +12,3 @@ venv/
 # Local secrets/config
 .env
 .env.*
-
