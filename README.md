@@ -37,6 +37,8 @@ prompt/
 
 utils/
   retrieval_time_plots.py  Retrieval-time plotting utilities
+  exclude_instruction_icl.py
+                           Chat transcript filtering utility
 
 data/
   user_data.json           Timing data used by the virtual time board
