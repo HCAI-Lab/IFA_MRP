@@ -8,8 +8,9 @@ class ME_agent:
     Memory Encoding Agent for autonomous household robot.
     Encodes raw interaction step observations into structured, concise natural-language memory traces.
     """
-    def __init__(self, **kwargs: Any):
-        self.llm = LLM_gpt(**kwargs)
+    def __init__(self, llm: Any = None, **kwargs: Any):
+        llm_class = kwargs.pop("llm_class", LLM_gpt)
+        self.llm = llm if llm is not None else llm_class(**kwargs)
         self.system_instruction = MEMORY_ENCODER_SYSTEM_INSTRUCTION
 
     def encode_observation(self, timestep: int, action: str, observation: str) -> str:

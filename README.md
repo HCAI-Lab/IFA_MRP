@@ -40,6 +40,9 @@ utils/
 
 data/
   user_data.json           Timing data used by the virtual time board
+
+main_gpt.ipynb             Notebook configured for the OpenAI GPT API
+main_qwen.ipynb            Notebook configured for Qwen/Qwen3-8B via Hugging Face
 ```
 
 ## Setup
@@ -65,7 +68,7 @@ python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-Then open `main.ipynb` and run the notebook cells from top to bottom.
+Then open either `main_gpt.ipynb` or `main_qwen.ipynb` and run the notebook cells from top to bottom.
 
 ### Linux
 
@@ -73,7 +76,11 @@ Linux setup instructions will be added later.
 
 ## Quick Start
 
-Open `main.ipynb` and run the cells from top to bottom. The notebook initializes the AI2-THOR household environment, creates the decision-making and memory-encoding agents, runs `run_agent_loop`, and saves the configured outputs.
+Use `main_gpt.ipynb` for the OpenAI GPT API. Set `OPENAI_API_KEY` before running the notebook or replace the placeholder in the setup cell.
+
+Use `main_qwen.ipynb` for local Hugging Face inference with `Qwen/Qwen3-8B`. `HF_TOKEN` is optional for public model access, but you can set it if your Hugging Face environment requires authentication.
+
+Both notebooks initialize the AI2-THOR household environment, create the decision-making and memory-encoding agents, run `run_agent_loop`, and save the configured outputs.
 
 ## Debug Options
 
@@ -90,8 +97,10 @@ Set `debug=True` to print detailed timeline calculations, object affordances, sc
 Depending on the options passed to `run_agent_loop`, the code can generate:
 
 - `chat.json`: full stacked message transcript
+- `chat_qwen.json`: full stacked message transcript from the Qwen notebook
 - `chat_findnplace.json`: find-and-place message context
 - `video.gif`: execution video
+- `video_qwen.gif`: execution video from the Qwen notebook
 - `actr_retrieval_times.png`: ACT-R retrieval-time plot
 - `modified_retrieval_times.png`: modified retrieval-time plot
 - `combined_retrieval_times.png`: combined retrieval-time plot

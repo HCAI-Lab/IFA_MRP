@@ -21,12 +21,14 @@ class LLM_public:
         self.HF_TOKEN = (
             kwargs.get("hf_token") or os.environ.get("HF_TOKEN")
         )
+        self.REQUIRE_HF_TOKEN = bool(kwargs.get("require_hf_token", False))
         self.DATA_TYPE = kwargs.get("dtype", "auto")
         self.DEVICE = kwargs.get("device", "auto")
+        self.ENABLE_THINKING = bool(kwargs.get("enable_thinking", False))
 
         if not self.MODEL_ID:
             raise ValueError("model_id is required.")
-        if not self.HF_TOKEN:
+        if self.REQUIRE_HF_TOKEN and not self.HF_TOKEN:
             raise ValueError("Set HF_TOKEN or pass hf_token.")
         if self.DO_SAMPLE and self.TEMPERATURE <= 0:
             raise ValueError(
@@ -40,22 +42,25 @@ class LLM_public:
 
     def load_llm(self) -> None:
         print(f"Loading model: {self.MODEL_ID}...")
-        login(token=self.HF_TOKEN)
+        auth_kwargs = {}
+        if self.HF_TOKEN:
+            login(token=self.HF_TOKEN)
+            auth_kwargs["token"] = self.HF_TOKEN
 
         self.tokenizer = AutoTokenizer.from_pretrained(
             self.MODEL_ID,
-            token=self.HF_TOKEN,
             trust_remote_code=True,
+            **auth_kwargs,
         )
         if self.tokenizer.pad_token is None:
             self.tokenizer.pad_token = self.tokenizer.eos_token
 
         self.model = AutoModelForCausalLM.from_pretrained(
             self.MODEL_ID,
-            token=self.HF_TOKEN,
             device_map=self.DEVICE,
             torch_dtype=self._get_dtype(self.DATA_TYPE),
             trust_remote_code=True,
+            **auth_kwargs,
         )
         self.model.eval()
 
@@ -141,7 +146,7 @@ class LLM_public:
         try:
             text = self.tokenizer.apply_chat_template(
                 messages,
-                enable_thinking=False,
+                enable_thinking=self.ENABLE_THINKING,
                 **template_kwargs,
             )
         except TypeError:
@@ -179,10 +184,10 @@ class LLM_public:
             inputs.input_ids.shape[1]:,
         ]
 
-        return self.tokenizer.decode(
+        return self._clean_tokens(self.tokenizer.decode(
             output_ids,
             skip_special_tokens=True,
-        ).strip()
+        )).strip()
 
     def generate_tool_call(
         self,
@@ -272,6 +277,13 @@ class LLM_public:
 
     @staticmethod
     def _clean_tokens(text: str) -> str:
+        text = re.sub(
+            r"<think>.*?</think>",
+            "",
+            text,
+            flags=re.DOTALL | re.IGNORECASE,
+        )
+
         for token in (
             "<|im_end|>",
             "<|im_start|>",
@@ -280,7 +292,12 @@ class LLM_public:
         ):
             text = text.replace(token, "")
 
-        return text.strip()
+        return re.sub(
+            r"^\s*(assistant|user|system)\b\s*:?\s*",
+            "",
+            text,
+            flags=re.IGNORECASE,
+        ).strip()
 
     @classmethod
     def _parse_value(cls, value: str):
